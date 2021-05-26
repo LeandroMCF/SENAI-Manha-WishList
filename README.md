@@ -1,6 +1,6 @@
 # SENAI-Manha-WishList
 Criado por: 
--Leando Cavalcanti
+-Leandro Cavalcanti
 -Joyce Santos
 -Edvaldo Ribeiro
 -Yan
