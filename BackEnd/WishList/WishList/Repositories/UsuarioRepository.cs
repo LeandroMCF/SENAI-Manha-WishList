@@ -37,7 +37,15 @@ namespace WishList.Repositories
 
         public List<Usuario> Listar()
         {
-            return ctx.Usuarios.ToList();
+            return ctx.Usuarios
+                .Select(u => 
+                new Usuario
+                {
+                    IdUsuario = u.IdUsuario,
+                    Nome = u.Nome,
+                    Email = u.Email
+                })
+                .ToList();
         }
 
         public Usuario Login(string email, string senha)
