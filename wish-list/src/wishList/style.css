@@ -1,3 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.conteudo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .content{
-    width: 80%;
+    width: 81%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.cabecalho{
+    width: 100%;
+    height: 182px;
+    display: flex;
+    justify-content: center;
+    background-color: #FC9200;
+    margin-bottom: 35px;
+}
+.entrar{
+    width: 270px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.entrar h2{
+    font-size: 36px;
+    height: auto;
+    font-family: 'Squada One', cursive;
+    margin-bottom: 5px;   
+}
+.alinharTitulo{
+    display: flex;
+    width: 55%;
+    justify-content: center;
+}
+.wishlistTitle{
+    display: flex;
+    font-family: 'Squada One', cursive;
+    font-style: normal;
+    font-size: 65px;
+    text-align: center;
+    margin-right: 55px;
+}
+.formularioEntrar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.digitar{
+    width: 270px;
+    height: 26px;
+    border-width: 1px;
+    border-radius: 5px;
+}
+.email{
+    margin-bottom: 10px;
+}
+.senha{
+    margin-bottom: 10px;
+}
+.botao{
+    width: 112px;
+    height: 26px;
+    background-color: #029DB1;
+    font-family: 'Squada One', cursive;
+    margin-left: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.cadastrar{
+    display: flex;
+    width: 100%;
+    height: 675px;
+    justify-content: center;
+}
+.adicionar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.addDesejo{
+    font-size: 48px;
+    font-family: 'Squada One', cursive;
+}
+.formularioCad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 634px;
+    flex-direction: column;
+}
+.alinharCad{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #029DB1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.campoCadastrar{
+    display: flex;
+    flex-direction: column;
+}
+.campoCadastrar h2{
+    font-size: 36;
+    font-family: 'Squada One', cursive;
+    color: white;
+}
+.tituloCad{
+    padding-right: 100px;
+}
+.tituloCad input{
+    width: 400px;
+    height: 46px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+}
+.descricaoCad textarea{
+    width: 400px;
+    height: 170px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+}
+.botao2{
+    width: 370px;
+    height: 94px;
+    font-size: 52px;
+    font-family: 'Squada One', cursive;
+    color: white;
+    background-color: #029DB1;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.listar{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    
+}
+.listarTit{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 48px;
+    font-family: 'Squada One', cursive;
+}
+.table{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.alinhar{
+    border-top: 0.5px solid black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.alinharExibir{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#blocos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1170px;
+    height: auto;
+}
+#bloco{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 270px;
+    height: 339px;
+    background: #FFFFFF;
+    border: 15px solid #FC9200;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.alinharExibirTit{
+    width: 183px;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.alinharExibirDesc{
+    width: 183px;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+#titulo{
+    font-size: 24px;
+    font-family: 'Squada One', cursive;
+    text-align: center;
+}
+#descricao{
+    word-break: break-all;
+    display: flex;
+    width: 183px;
+    font-size: 18;
+    font-family: 'Squada One', cursive;
+    text-align: center;
+}
+#botaoExibir{
+    width: 112px;
+    height: 26px;
+    background-color: #029DB1;
+    font-family: 'Squada One', cursive;
+    border: 1px solid black;
+    border-radius: 10px;
 }

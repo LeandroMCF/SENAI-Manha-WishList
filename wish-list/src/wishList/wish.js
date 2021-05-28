@@ -112,72 +112,103 @@ class wish extends Component{
 
     render(){
         return(
-            <div className="content">
-                <header>
-                    <div className='entrar'>
-                        <h2>ENTRAR</h2>
-                        <form onSubmit={this.login}>
-                            <input
-                                type='text'
-                                value={this.state.email}
-                                onChange={this.attEmail}
-                                placeholder='Email'
-                            />
-                            <input
-                                type='text'
-                                value={this.state.senha}
-                                onChange={this.attSenha}
-                                placeholder='Senha'
-                            />
-                            <button className='botao' type='submit'>Entrar</button>
-                        </form>
-                    </div>
-
-                    <h1>WISH LIST</h1>
-                </header>
-                <section>
-                    <h2>Adicionar desejo</h2>
-                    <div className='adicionar'>
-                        <form onSubmit={this.cadastrar}>
-                            <h2>Título</h2>
-                            <input
-                                type='text'
-                                value={this.state.titulo}
-                                onChange={this.attTitulo}
-                                placeholder='Digite aqui'
-                            />
-                            <h2>Descrição</h2>
-                            <input
-                                type='text'
-                                value={this.state.descricao}
-                                onChange={this.attDscricao}
-                                placeholder='Digite aqui'
-                            />
-                            <button className='botao' type='submit'>Adicionar</button>
-                        </form>
-                    </div>
-
-                    <div className='desejos'>
-                        <h2>Desejos</h2>
-                        <div className='bloco'>
-                            <table>
-                                <tbody>
-                                    {
-                                        this.state.desejos.map( (wishList) => {
-                                            return(
-                                                <tr key={wishList.idDesejo}>
-                                                    <td>{wishList.idDesejo}</td>
-                                                    <td>{wishList.titulo}</td>
-                                                    <td>{wishList.descricao}</td>
-                                                    <td><button onClick={() => this.excluir(wishList)}>Excluir</button></td>
-                                                </tr>
-                                            )  
-                                        } )
-                                    }
-                                </tbody>
-                            </table>
+            <div className="conteudo">
+                <header className='cabecalho'>
+                    <div className='content'>
+                        <div className='entrar '>
+                            <h2>Entrar</h2>
+                            <form className='formularioEntrar' onSubmit={this.login}>
+                                <input
+                                    className='digitar email'
+                                    type='text'
+                                    value={this.state.email}
+                                    onChange={this.attEmail}
+                                    placeholder='Email'
+                                />
+                                <input
+                                    className='digitar senha'
+                                    type='text'
+                                    value={this.state.senha}
+                                    onChange={this.attSenha}
+                                    placeholder='Senha'
+                                />
+                                <button className='botao' type='submit'>Entrar</button>
+                            </form>
                         </div>
-                    </div>                    
+                        <div className='alinharTitulo'>
+                            <h1 className='wishlistTitle'>WISH LIST</h1>
+                        </div>
+                    </div>
+                </header>
+                
+                <section className='cadastrar'>
+                    <div className='content'>
+                        <div className='adicionar'>
+                            <h2 className='addDesejo'>Adicionar desejo</h2>
+                            <form className='formularioCad' onSubmit={this.cadastrar}>
+                                <div className='alinharCad '>
+                                    <div className='campoCadastrar tituloCad'>
+                                        <h2>Título</h2>
+                                        <input
+                                            type='text'
+                                            value={this.state.titulo}
+                                            onChange={this.attTitulo}
+                                            placeholder='Digite aqui'
+                                        />
+                                    </div>
+                                        <div className='campoCadastrar descricaoCad'>
+                                        <h2>Descrição</h2>
+                                        <textarea
+                                            rows="5"
+                                            type='text'
+                                            value={this.state.descricao}
+                                            onChange={this.attDscricao}
+                                            placeholder='Digite aqui'
+                                        />
+                                    </div>
+                                </div>
+                                <div className='alinharBotao'>
+                                    <button className='botao2' type='submit'>Adicionar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div className='listar'>
+                        <div className='content'>
+                            <div className='alinhar'>
+                                <div className='listarTit'>
+                                    <h2>Desejos</h2>
+                                </div>
+                                <table className='table'>
+                                    <div className='alinharExibir'>
+                                        <tbody id='blocos'>
+                                            { 
+                                                this.state.desejos.map( (wishList) => {
+                                                    return(
+                                                        <tr key={wishList.idDesejo}>
+                                                            <div id='bloco'>
+                                                                <div className='alinharExibirTit'>
+                                                                    <td id='titulo'>{wishList.titulo}</td>
+                                                                </div>
+                                                                <div className='alinharExibirDesc'>
+                                                                    <td id='descricao'>{wishList.descricao}</td>
+                                                                </div>
+                                                                <div className='alinharExibirBot'>
+                                                                    <td><button id='botaoExibir' onClick={() => this.excluir(wishList)}>Excluir</button></td>
+                                                                </div>
+                                                            </div>
+                                                        </tr>
+                                                    )
+                                                } )
+                                            }
+                                        </tbody>
+                                    </div>
+                                </table>
+                            </div>
+                        </div>                    
+                    </div>
                 </section>
             </div>
         )
