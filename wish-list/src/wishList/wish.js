@@ -56,6 +56,8 @@ class wish extends Component{
             body : JSON.stringify({
                 Email : this.state.email,
                 Senha : this.state.senha
+                // Email : 'leandro@gmail.com',
+                // Senha : 'leandro123'
             }),
 
             headers : {

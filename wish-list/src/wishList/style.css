@@ -125,11 +125,12 @@
 }
 .tituloCad{
     padding-right: 100px;
+    padding-bottom: 140px;
 }
 .tituloCad input{
-    width: 400px;
-    height: 46px;
-    border-radius: 10px;
+    width: 300px;
+    height: 26px;
+    border-radius: 5px;
     border-width: 1px;
     border-color: black;
 }
@@ -200,7 +201,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 270px;
+    width: 639px;
     height: 339px;
     background: #FFFFFF;
     border: 15px solid #FC9200;
@@ -209,7 +210,7 @@
     margin-bottom: 50px;
 }
 .alinharExibirTit{
-    width: 183px;
+    width: 80%;
     height: 79px;
     display: flex;
     justify-content: center;
@@ -218,10 +219,13 @@
     margin-bottom: 20px;
 }
 .alinharExibirDesc{
-    width: 183px;
+    width: 80%;
     height: auto;
     display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 #titulo{
     font-size: 24px;
@@ -230,8 +234,6 @@
 }
 #descricao{
     word-break: break-all;
-    display: flex;
-    width: 183px;
     font-size: 18;
     font-family: 'Squada One', cursive;
     text-align: center;
